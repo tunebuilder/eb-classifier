@@ -1,0 +1,8 @@
+streamlit
+pypdf2
+pdfplumber
+pytesseract
+pillow
+openai
+anthropic
+pyyaml
