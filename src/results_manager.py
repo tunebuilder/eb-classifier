@@ -92,7 +92,7 @@ class ResultsManager:
             os.makedirs(output_dir, exist_ok=True)
             
             # Generate filename with model name
-            filename = f"borenomore_results_{self.model_name}_{self.timestamp}.csv"
+            filename = f"evidence_base_classifier_results_{self.model_name}_{self.timestamp}.csv"
             filepath = os.path.join(output_dir, filename)
             
             # Write CSV
@@ -115,7 +115,7 @@ class ResultsManager:
             os.makedirs(output_dir, exist_ok=True)
             
             # Generate filename with model name
-            filename = f"borenomore_errors_{self.model_name}_{self.timestamp}.csv"
+            filename = f"evidence_base_classifier_errors_{self.model_name}_{self.timestamp}.csv"
             filepath = os.path.join(output_dir, filename)
             
             # Write CSV
@@ -139,12 +139,12 @@ class ResultsManager:
             os.makedirs(output_dir, exist_ok=True)
             
             # Generate filename with model name
-            filename = f"borenomore_errors_{self.model_name}_{self.timestamp}.txt"
+            filename = f"evidence_base_classifier_errors_{self.model_name}_{self.timestamp}.txt"
             filepath = os.path.join(output_dir, filename)
             
             # Write text file
             with open(filepath, 'w', encoding='utf-8') as txtfile:
-                txtfile.write(f"BoreNoMore Article Reader - Error Log\n")
+                txtfile.write(f"Evidence Base Classifier - Error Log\n")
                 txtfile.write(f"Generated: {datetime.now().isoformat()}\n")
                 txtfile.write(f"Total Errors: {len(self.errors)}\n")
                 txtfile.write("=" * 50 + "\n\n")

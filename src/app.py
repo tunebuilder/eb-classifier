@@ -7,13 +7,13 @@ from pdf_processor import PDFProcessor
 from llm_client import LLMClient
 from results_manager import ResultsManager
 
-st.set_page_config(page_title="BoreNoMore Article Reader")
+st.set_page_config(page_title="Evidence Base Classifier")
 
 # --- Config file management ---
 def get_config_path():
     """Get the path to the config file."""
     home_dir = Path.home()
-    config_dir = home_dir / ".borenomore"
+    config_dir = home_dir / ".evidence_base_classifier"
     config_dir.mkdir(exist_ok=True)
     return config_dir / "config.yaml"
 
@@ -44,7 +44,7 @@ if 'config_loaded' not in st.session_state:
     st.session_state.config = load_config()
     st.session_state.config_loaded = True
 
-st.title("BoreNoMore Article Reader")
+st.title("Evidence Base Classifier")
 
 # --- Sidebar for settings ---
 with st.sidebar:
