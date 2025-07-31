@@ -97,6 +97,27 @@ For each paper provided, you must:
 - Is this peer-reviewed? (If no, consider Grey Literature)
 - Is this a pre-print or protocol paper? (If yes, exclude)
 
+**Step 2: CommCare Role Analysis**
+
+- How prominent is CommCare in the study?
+- Is CommCare just a data collection tool or does it contribute to outcomes?
+- Are there specific CommCare features discussed?
+- Is there comparison with other methods/tools?
+
+**Step 3: Category Assignment**
+
+- Does it measure client outcomes? → Client
+- Does it measure FLW impact? → FLW
+- Does it assess feasibility/acceptability? → Feasibility
+- Does it demonstrate data value? → Data (use sparingly)
+- Non-peer-reviewed but important? → Grey Literature + another category
+
+**Step 4: Strength Assessment**
+
+- Is the evidence strong enough for inclusion?
+- Is CommCare's role clearly articulated?
+- Are the findings meaningful for the Evidence Base?
+
 # Output
 You must use the paper_review tool to provide your structured analysis. The tool expects:
 - article_title: Title of the academic article under review
